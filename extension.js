@@ -24,7 +24,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Join Our Facebook Group: http://on.fb.me/1dRgupy");
+                    API.sendChat("/me Join Our Facebook Group: http://bit.ly/1UhwuOO");
                 }
             }
         };
@@ -41,7 +41,7 @@
                 }
             }
         };
-        
+  /*      
         bot.commands.changelog = {
             command: 'changelog',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'bouncer', //Minimum user permission to use the command
@@ -53,7 +53,7 @@
                     API.sendChat("/me Change Log: https://goo.gl/V9pC3K");
                 }
             }
-        };
+        };*/
         
         //Load the chat package again to account for any changes
         bot.loadChat();
@@ -65,7 +65,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Java Bot",
         language: "english",
-        chatLink: "https://rawgit.com/cooljddj/mybasicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/aalinnfs/basicBot/master/lang/en.json",
         maximumAfk: 60,
         afkRemoval: false,
         maximumDc: 120,
@@ -96,17 +96,17 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 10,
-        motd: "Your #1 plug for a unique and diverse taste of The Nation!",
+        motd: null,
         filterChat: true,
         etaRestriction: false,
         welcome: true,
-        opLink: "http://bit.ly/1zQ3biY",
-        rulesLink: "http://bit.ly/1A5GcR9",
+        opLink: "http://bit.ly/1sq5M0r",
+        rulesLink: null,
         themeLink: "We allow These genres: Trap, House, Chill, Electro, Rap, and Bass music.",
-        fbLink: "http://facebook.com/alltrapnation",
-        youtubeLink: "https://www.youtube.com/user/AllTrapNation",
-        website: "http://alltrapnation.com/",
-        intervalMessages: ["Like us on Facebook: http://facebook.com/alltrapnation", "Sub to us on Youtube: https://www.youtube.com/user/AllTrapNation", "Follow us on twitter: http://twitter.com/alltrapnation"],
+        fbLink: "http://facebook.com/trapdacicc & https://www.facebook.com/ravenueofficial",
+        youtubeLink: "https://www.youtube.com/c/trapdacic & https://www.youtube.com/channel/UCv0Jd36ByQYSnqVleBINATA",
+        website: "http://alltrapdacic.com/",
+        intervalMessages: null,
         messageInterval: 5,
         songstats: false,
         commandLiteral: "!",
@@ -117,6 +117,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/cooljddj/mybasicbot/master/basicBot.js', extend);
+   // $.getScript('https://rawgit.com/cooljddj/mybasicbot/master/basicBot.js', extend);
 
 }).call(this);
